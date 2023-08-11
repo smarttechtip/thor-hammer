@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+
+    background-color: black;
+    overflow: hidden;
+}
+.hammer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head{
+    position: absolute;
+    width: 150px;
+    height: 75px;
+    background-color:white;
+    top: 200px;
+}
+.top,.bottom{
+    position: absolute;
+    width: 150px;
+    height: 10px;
+    background-color: white;
+
+}
+.top{
+    top: 188px;
+}
+.bottom{
+    top: 277px;
+}
+.left,.right{
+    position: relative;
+    width: 10px;
+    height: 75px;
+    background-color: rgb(255, 255, 255);
+    
+}
+.left{
+    top:200px;
+    left: -77px;
+}
+.right{
+    top: 200px;
+    right: -77px;
+}
+.triangle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.t1,.t2,.t3,.t4{
+    position: absolute;
+    border-width: 8px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255) transparent transparent transparent;
+}
+.t1{
+transform: rotate(-45deg);
+top: 190px;
+margin-right: 173px;
+}
+.t2{
+    transform: rotate(45deg);
+    top: 190px;
+    margin-left: 134px;
+}
+
+.t3{
+    transform: rotate(135deg);
+    top: 269px;
+    margin-left: 134px;
+}
+.t4{
+    transform: rotate(-135deg);
+    top: 269px;
+    margin-right: 173px;
+}
+
+.top-circle{
+    width: 70px;
+    height: 3px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    top: 110px;
+}
+.h-p{
+    width: 20px;
+    height: 30px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    top: 200px;
+}
+.h-p1,.h-p2,.h-p3,.h-p4,.h-p5,.h-p6{
+    width: 20px;
+    height: 30px;
+    background-color: white;
+    margin: auto;
+    transform: skewY(-30deg);
+    position: relative;
+    margin-bottom: 3px;
+    top: 180px;
+}
+.h-p7{
+    width: 25px;
+    height: 30px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    top: 166px;
+}
+.roap{
+    width: 30px;
+    height: 55px;
+    margin: auto;
+    position: relative;
+    top: 160px;
+
+    transform: rotate(10deg);
+   border: 2px solid white;
+   border-radius: 40px 100px 100px 50px;
+}
+.ham{
+    position: relative;
+    bottom: 100px;
+    transform: rotate(135deg);
+    transform-origin:bottom;
+}
